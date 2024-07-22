@@ -496,48 +496,22 @@ header {
 }
 
 /* Learning Method section */
+/* Estilos para dispositivos grandes */
 .learning-method-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 20px;
+    padding: 20px;
     background-color: #0E0B2D;
     width: 100%;
+    box-sizing: border-box;
     text-align: center;
-    margin-top: 60px;
-    margin-bottom: 20px;
-}
-
-.learning-method-section h1 {
-    font-family: 'Instrument Sans', sans-serif;
-    font-size: 49.0729px;
-    line-height: 61px;
-    text-align: center;
-    letter-spacing: normal;
-    color: #f2b42d;
-    margin-bottom: 20px;
-}
-
-.learning-method-section h2 {
-    font-size: 20px;
-    text-align: center;
-    line-height: 29px;
-    margin-bottom: 20px;
-}
-
-.learning-method-section p {
-    font-size: 20.856px;
-    text-align: center;
-    font-weight: normal;
-    margin-bottom: 20px;
 }
 
 .image-container-2 {
     width: 100%;
     height: 324px;
-    max-height: 324px;
     overflow: hidden;
-    margin-bottom: 20px;
 }
 
 .learning-method-image {
@@ -546,18 +520,40 @@ header {
     object-fit: cover;
     object-position: 50% 15%;
     border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.text-container {
+    max-width: 1072px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.learning-method-section h1 {
+    font-size: 49.0729px;
+    line-height: 61.3412px;
+    color: #f2b42d;
+    letter-spacing: normal;
+    font-family: 'Instrument Sans', sans-serif;
+    margin-bottom: 20px;
+}
+
+.learning-method-section p {
+    font-family: "PT Sans", sans-serif;
+    font-size: 20.856px;
+    line-height: 33.3696px;
+    letter-spacing: normal;
+    margin-bottom: 40px;
 }
 
 .method-items {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 100%;
-    margin-top: 40px;
 }
 
 .method-item {
-    max-width: 30%;
+    max-width: 45%;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -568,6 +564,7 @@ header {
     letter-spacing: normal;
     line-height: 30.6706px;
     margin-bottom: 13px;
+    position: relative;
 }
 
 .method-item p {
@@ -578,13 +575,13 @@ header {
     margin: 0;
 }
 
-/* Timeline */
 .timeline {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 70%;
-    margin: 150px auto 0;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
     position: relative;
     padding-top: 20px;
 }
@@ -598,6 +595,7 @@ header {
     height: 2px;
     background-color: #ffffff;
     opacity: 24%;
+    transform: translateY(-50%);
     z-index: 0;
     margin-bottom: 10px;
 }
@@ -608,7 +606,6 @@ header {
     align-items: center;
     position: relative;
     font-weight: bold;
-    flex: 1;
 }
 
 .timeline-circle {
@@ -628,94 +625,57 @@ header {
     margin-bottom: 22px;
 }
 
-/* Estilos para el número 1 */
-.timeline-item:first-child .timeline-circle {
-    top: -30px;
-}
-
-.timeline-item:first-child .timeline-circle::before {
+.timeline-circle::before {
     content: '';
     position: absolute;
-    bottom: 100%;
+    top: -40px;
     left: 50%;
     width: 2.5px;
     height: 40px;
     background-color: #c17cff;
     transform: translateX(-50%);
-}
-
-.timeline-item:first-child .timeline-text {
-    text-align: left;
-    width: calc(100% - 50px);
-    margin-right: auto;
-    margin-left: 30px;
-    margin-top: -260px;
-}
-
-/* Estilos para el número 2 */
-.timeline-item:nth-child(2) .timeline-circle {
-    margin-bottom: 20px;
-    top: 180px;
 }
 
 .timeline-item:nth-child(2) .timeline-circle::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    width: 2.5px;
+    top: 44px;
     height: 40px;
-    background-color: #c17cff;
-    transform: translateX(-50%);
 }
 
-.timeline-item:nth-child(2) .timeline-text {
-    text-align: left;
-    width: calc(100% - 50px);
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 205px;
+.timeline-item:nth-child(2) .timeline-circle {
+    margin-bottom: 20px;
 }
 
-/* Estilos para el número 3 */
-.timeline-item:last-child .timeline-circle {
-    top: -30px;
+.practice-item {
+    margin-top: 60px;
 }
 
-.timeline-item:last-child .timeline-circle::before {
-    content: '';
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    width: 2.5px;
-    height: 40px;
-    background-color: #c17cff;
-    transform: translateX(-50%);
+.practice-item h2 {
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 24.5365px;
+    letter-spacing: normal;
+    line-height: 30.6706px;
+    margin-bottom: 13px;
+    position: relative;
 }
 
-.timeline-item:last-child .timeline-text {
-    text-align: left;
-    width: calc(100% - 50px);
-    margin-right: auto;
-    margin-left: 25px;
-    margin-top: -240px;
+.practice-item p {
+    font-family: "PT Sans", sans-serif;
+    font-size: 20.856px;
+    line-height: 33.3696px;
+    letter-spacing: normal;
+    margin: 0;
 }
 
-.timeline-text {
-    width: 500px;
-    text-align: center;
-}
-
+/* Estilos para dispositivos pequeños */
 @media (max-width: 768px) {
     .learning-method-section {
-        padding: 20px 10px;
+        padding: 40px 10px;
         margin-top: 40px;
         margin-bottom: 10px;
     }
 
-    .learning-method-section h2 {
-        font-size: 18px;
-        text-align: center;
+    .learning-method-section h1 {
+        font-size: 32px;
     }
 
     .learning-method-section p {
@@ -737,6 +697,24 @@ header {
     .method-item {
         max-width: 100%;
         margin-bottom: 20px;
+        position: relative;
+    }
+
+    .method-item h2::before {
+        content: attr(data-number);
+        display: block;
+        font-family: "Instrument Sans", sans-serif;
+        font-size: 24px;
+        color: #fff;
+        background-color: #0E0B2D;
+        border: 3px solid #c17cff;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 13px;
     }
 
     .method-item h2 {
@@ -750,138 +728,8 @@ header {
     }
 
     .timeline {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        padding-left: 20px;
-        margin-top: 20px;
-    }
-
-    .timeline::before {
-        width: 2px;
-        height: 100%;
-        top: 0;
-        left: 20px;
-        transform: translateX(0);
-    }
-
-    .timeline-item {
-        flex-direction: row;
-        align-items: flex-start;
-        margin-bottom: 20px;
-        width: 100%;
-    }
-
-    .timeline-circle {
-        margin-bottom: 0;
-        margin-right: 10px;
-        top: auto;
-    }
-
-    .timeline-circle::before {
         display: none;
-    }
-
-    .timeline-item:first-child .timeline-text,
-    .timeline-item:nth-child(2) .timeline-text,
-    .timeline-item:last-child .timeline-text {
-        text-align: left;
-        width: calc(100% - 50px);
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: 0;
-    }
-}
-
-.practice-item {
-    margin-top: 60px;
-    text-align: start;
-}
-
-.practice-item h2 {
-    font-family: "Instrument Sans", sans-serif;
-    font-size: 24.5365px;
-    letter-spacing: normal;
-    line-height: 30.6706px;
-    margin-bottom: 13px;
-}
-
-.practice-item p {
-    font-family: "PT Sans", sans-serif;
-    font-size: 20.856px;
-    line-height: 33.3696px;
-    letter-spacing: normal;
-    margin: 0;
-}
-
-@media (max-width: 768px) {
-    .learning-method-section h1 {
-        font-size: 32px;
-    }
-
-    .learning-method-section h2 {
-        font-size: 20px;
-        text-align: start;
-    }
-
-    .learning-method-section p {
-        font-size: 18px;
-        text-align: start;
-    }
-
-    .method-items {
-        display: none;
-    }
-
-    .timeline {
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 20px;
-        width: 100%;
-    }
-
-    .timeline::before {
-        width: 2px;
-        height: 100%;
-        top: 0;
-        left: 20px;
-        transform: translateX(0);
-    }
-
-    .timeline-item {
-        flex-direction: row;
-        align-items: flex-start;
-        margin-bottom: 20px;
-        width: 100%;
-    }
-
-    .timeline-circle {
-        margin-bottom: 0;
-        margin-right: 10px;
-        left: -20px;
-        top: auto;
-    }
-
-    .timeline-circle::before {
-        display: none;
-    }
-
-    .timeline-text {
-        flex: 1;
-        padding-left: 10px;
-        text-align: left;
-    }
-
-    .timeline-item:nth-child(1) .timeline-circle {
-        top: 0;
-    }
-
-    .timeline-item:nth-child(2) .timeline-circle {
-        top: calc(33.33% - 22px);
-    }
-
-    .timeline-item:nth-child(3) .timeline-circle {
-        top: calc(66.66% - 22px);
+        /* Ocultar timeline en dispositivos pequeños */
     }
 
     .practice-item {
@@ -889,8 +737,26 @@ header {
         text-align: start;
     }
 
+    .practice-item h2::before {
+        content: "3";
+        display: block;
+        font-family: "Instrument Sans", sans-serif;
+        font-size: 24px;
+        color: #fff;
+        background-color: #0E0B2D;
+        border: 3px solid #c17cff;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 13px;
+    }
+
     .practice-item h2 {
         font-size: 20px;
+        text-align: center;
     }
 
     .practice-item p {
@@ -923,6 +789,11 @@ header {
 }
 
 @media (max-width:768px) {
+
+    .learning-method-section h1 {
+        font-size: 32px;
+    }
+
     .schedule-text h2 {
         font-size: 20px;
     }
@@ -1189,13 +1060,25 @@ header {
 
     .connections-section h1 {
         font-size: 32px;
+        text-align: center;
+    }
+
+    .connections-section p {
+        font-size: 18px;
     }
 
     .image-container-4 {
         width: 100%;
         height: auto;
         margin-top: 20px;
+        max-height: 324px;
     }
+
+    /* .connections-image {
+        width: 100%;
+        height: auto;
+        max-height: 324px;
+    } */
 
     .text-container {
         padding-left: 0;
@@ -1299,7 +1182,7 @@ header {
 
     .join-section p {
         font-size: 18px;
-        text-align: center;
+        text-align: start;
         letter-spacing: 0.05rem;
         margin-bottom: 10px;
         /* Ajustado el margen inferior para dispositivos pequeños */
